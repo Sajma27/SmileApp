@@ -11,11 +11,11 @@
         <scene sceneID="Pop-1h-FNz">
             <objects>
                 <viewController id="Pwf-GD-cPq" customClass="ViewController" customModule="SmileApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="IRs-ih-T5b">
+                    <view key="view" contentMode="scaleToFill" id="IRs-ih-T5b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-Aw-Qco">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-Aw-Qco">
                                 <rect key="frame" x="48" y="693" width="318" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="2cu-7H-AT2"/>
@@ -25,14 +25,11 @@
                                     <action selector="sliderValueChanged:" destination="Pwf-GD-cPq" eventType="valueChanged" id="gYk-3g-feX"/>
                                 </connections>
                             </slider>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-gi-BqY" customClass="SmileView" customModule="SmileApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-gi-BqY" customClass="SmileView" customModule="SmileApp" customModuleProvider="target">
                                 <rect key="frame" x="28" y="269" width="358" height="358"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="bCc-Vo-Wi8"/>
-                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Main Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-vv-Qiy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-vv-Qiy">
                                 <rect key="frame" x="165.5" y="191" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
