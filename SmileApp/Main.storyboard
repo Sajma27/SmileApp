@@ -11,30 +11,33 @@
         <scene sceneID="Pop-1h-FNz">
             <objects>
                 <viewController id="Pwf-GD-cPq" customClass="ViewController" customModule="SmileApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IRs-ih-T5b">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="IRs-ih-T5b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-Aw-Qco">
-                                <rect key="frame" x="18" y="712" width="378" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-Aw-Qco">
+                                <rect key="frame" x="48" y="693" width="318" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="2cu-7H-AT2"/>
+                                    <constraint firstAttribute="height" constant="30" id="J81-u9-ztL"/>
+                                </constraints>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="Pwf-GD-cPq" eventType="valueChanged" id="gYk-3g-feX"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-vv-Qiy">
-                                <rect key="frame" x="165.5" y="184" width="83" height="21"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-gi-BqY" customClass="SmileView" customModule="SmileApp" customModuleProvider="target">
+                                <rect key="frame" x="28" y="269" width="358" height="358"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="bCc-Vo-Wi8"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Main Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-vv-Qiy">
+                                <rect key="frame" x="165.5" y="191" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-gi-BqY" customClass="SmileView" customModule="SmileApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="280" width="374" height="336"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="Pmr-9h-fTR"/>
-                                    <constraint firstAttribute="height" constant="336" id="sQF-jm-E5d"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -42,9 +45,10 @@
                             <constraint firstItem="7zU-gi-BqY" firstAttribute="centerX" secondItem="IRs-ih-T5b" secondAttribute="centerX" id="8Lj-tc-cEn"/>
                             <constraint firstItem="ahx-Aw-Qco" firstAttribute="centerX" secondItem="IRs-ih-T5b" secondAttribute="centerX" id="NnQ-Sp-JYV"/>
                             <constraint firstItem="S5c-vv-Qiy" firstAttribute="centerX" secondItem="byQ-sU-9cO" secondAttribute="centerX" id="RXe-JW-Tit"/>
-                            <constraint firstItem="ahx-Aw-Qco" firstAttribute="top" secondItem="byQ-sU-9cO" secondAttribute="bottom" constant="-150" id="WFV-Ca-W4U"/>
-                            <constraint firstItem="ahx-Aw-Qco" firstAttribute="leading" secondItem="7zU-gi-BqY" secondAttribute="leading" id="cbM-ko-7NP"/>
-                            <constraint firstItem="S5c-vv-Qiy" firstAttribute="top" secondItem="byQ-sU-9cO" secondAttribute="top" constant="140" id="osb-jU-05c" userLabel="Main Label.top = Safe Area.top + 100"/>
+                            <constraint firstItem="ahx-Aw-Qco" firstAttribute="top" secondItem="7zU-gi-BqY" secondAttribute="bottom" constant="66" id="WFV-Ca-W4U"/>
+                            <constraint firstItem="7zU-gi-BqY" firstAttribute="height" secondItem="IRs-ih-T5b" secondAttribute="height" multiplier="0.4" id="XGa-7a-fVk"/>
+                            <constraint firstItem="7zU-gi-BqY" firstAttribute="width" secondItem="IRs-ih-T5b" secondAttribute="height" multiplier="0.4" id="dWH-fm-kkc"/>
+                            <constraint firstItem="S5c-vv-Qiy" firstAttribute="top" secondItem="7zU-gi-BqY" secondAttribute="top" constant="-78" id="osb-jU-05c" userLabel="Main Label.top = Safe Area.top + 100"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="byQ-sU-9cO"/>
                     </view>
