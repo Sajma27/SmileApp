@@ -10,12 +10,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        smileView.setDataSource(dataSource)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        smileView.draw(CGRect())  //Niestety nie wiem jak użyć tej metody
+        smileView.setDataSource(dataSource)
+        smileView.setNeedsDisplay()
         refreshText()
     }
     

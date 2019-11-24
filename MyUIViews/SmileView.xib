@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <viewLayoutGuide key="safeArea" id="Vs1-Yc-3yA"/>
-            <point key="canvasLocation" x="-484" y="140"/>
+            <point key="canvasLocation" x="-99" y="35"/>
         </view>
     </objects>
 </document>
